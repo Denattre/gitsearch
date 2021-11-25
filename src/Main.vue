@@ -2,7 +2,7 @@
   <div :class="{['dark']: darkThemeOn}">
     <div class="min-h-screen dark:bg-black pattern">
       <header class="flex justify-center flex-col min-w-full p-5">
-        <h1 class="text-4xl m-auto mb-5 dark:text-white">Поиск репозиториев по GitHub</h1>
+        <h1 class="text-4xl m-auto mb-5 dark:text-white text-center">Поиск репозиториев по GitHub</h1>
         <DarkLightToggle class="m-auto" v-model="darkThemeOn"></DarkLightToggle>
       </header>
 
@@ -10,7 +10,7 @@
 
       <Search @input="debouncedSearch" v-model="query" />
 
-      <div class="flex gap-6 w-3/4 m-auto mb-12">
+      <div class="flex gap-1 w-3/4 m-auto mb-12 flex-col sm:flex-row sm:gap-6">
         <div class="w-full mt-5 m-auto mb-2 border-2 flex justify-between rounded-md cursor-pointer dark:bg-gray-500 dark:border-yellow-500">
           <select name="sort" id="sort" @change="changeSort" 
             class="flex-grow outline-none text-gray-600 py-1 px-3 cursor-pointer dark:bg-gray-500 dark:text-white">
