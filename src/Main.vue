@@ -35,7 +35,7 @@
         <ul v-if="repList.length" class="grid grid-cols-2 gap-6 lg:grid-cols-3 mb-12">
           <Card :repository="rep" v-for="rep in repList" :key="rep.id" />  
         </ul>
-        <div v-else class="mb-6">По вашему запросу ничего не найдено</div>
+        <div v-else class="mb-6 dark:text-white">По вашему запросу ничего не найдено</div>
         <div class="flex justify-between gap-6 pb-6">
           <button 
             @click="prevPage" 
